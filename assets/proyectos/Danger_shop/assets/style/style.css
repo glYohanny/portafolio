@@ -1,0 +1,109 @@
+:root{
+    --clr-black:        #100F0F;
+    --clr-whith:        #FFFFFF;
+    --clr-grey:         #c5c1c1;
+    --clr-blue:         #040A5A;
+    --clr-red:          #B30C0C;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:  var(--clr-whith) ;
+}
+
+body{
+    min-height: 100px;
+    background-color: var(--clr-black);
+}
+main{
+    padding: 2rem;
+    margin: 0 auto;
+}
+.overlay{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap:1rem 
+    
+}
+.completa{
+    border-radius: 1rem;
+    background-color: var(--clr-black);
+    box-shadow: 0 0 3rem -1rem rgba(243, 241, 241, 0.689);
+    padding-block: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    width: 480px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 480px;
+}
+.imagen{
+    width: 350px; /* Ancho específico */
+    height: 350px; /* Alto específico */
+}
+
+@media screen and (max-width: 500px) {
+    .overlay{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap:1rem;
+    }
+    .completa{
+        width: 300px;
+        height: 300px;
+    }
+    .imagen{
+        width: 150px; /* Ancho específico */
+        height: 150px; /* Alto específico */
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1264px) {
+    .overlay{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+    }
+    .completa{
+        padding-block: 3rem;
+        width: 23rem;
+        height: 27rem;
+    }
+    .imagen{
+        width: 17.1rem; /* Ancho específico */
+        height: 17.1rem; /* Alto específico */
+    }
+    
+}
+@media screen and (min-width: 1265px) {
+    .overlay{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1rem;
+    }
+    .completa{
+        width: 25rem;
+        height: 30rem;
+    }
+    .imagen{
+        width: 20rem; /* Ancho específico */
+        height: 20rem; /* Alto específico */
+    }
+}
+.logo{
+    width: 5rem;  
+}
+
+.carousel-item {
+    align-items: center;
+    text-align: center;
+}
